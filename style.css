@@ -8,12 +8,11 @@ body {
   font-family:
     playfair display,
     serif;
-  background-color: #ffffff;
+  background: linear-gradient(to top, #a6b9ae, #b49ec0);
   color: #6c398a;
   text-align: center;
-  padding: 20px;
+  padding: 70px;
   padding-top: 100px;
-  /* para evitar que o conteúdo fique escondido atrás da barra de navegação fixa */
 }
 img {
   width: 500px;
@@ -38,25 +37,29 @@ ul {
 
 a {
   text-decoration: none;
-  color: hwb(0 99% 1% / 0.706);
+  color: #6c398a;
   font-weight: bold;
   font-size: 26px;
 }
 
-nav {
-  background-color: #cde7d8;
-  padding: 12px 0;
+nav a:hover {
+  color: #a6b9ae;
+}
 
-  position: fixed;
-  top: 0px; /* dá um espacinho do topo */
+nav a {
+  color: #a279b9;
+}
 
-  width: 90%;
-  max-width: 900px; /* igual ao seu .card */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 
-  left: 50%;
-  transform: translateX(-50%);
+  border-top: 1px solid #ccc;
 
-  border-radius: 0 0 10px 10px;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+footer p {
+  color: #587062;
 }
